@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals_WebAPI", "Animals_WebAPI.csproj", "{841EC61F-A9F0-4703-B58C-AE516EB4DFB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalsClassLibrary", "..\AnimalsClassLibrary\AnimalsClassLibrary.csproj", "{CD806FF1-9794-4218-8052-8086DF2359B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{841EC61F-A9F0-4703-B58C-AE516EB4DFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841EC61F-A9F0-4703-B58C-AE516EB4DFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841EC61F-A9F0-4703-B58C-AE516EB4DFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841EC61F-A9F0-4703-B58C-AE516EB4DFB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD806FF1-9794-4218-8052-8086DF2359B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD806FF1-9794-4218-8052-8086DF2359B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD806FF1-9794-4218-8052-8086DF2359B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD806FF1-9794-4218-8052-8086DF2359B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A3729C5-14F2-4FB5-99E0-197BC86019FA}
+	EndGlobalSection
+EndGlobal
