@@ -10,12 +10,12 @@ namespace AnimalsAppLibrary.Models
     public class Bird : Animal,  IBird
     {
 
-        public void fly()
+        public void Fly()
         {
             throw new NotImplementedException();
         }
 
-        public override void Makenoise()
+        public override void MakeNoise()
         {
             throw new NotImplementedException();
         }

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace AnimalsAppLibrary.Abstractions
 {
-    public interface IMammal : IAnimal
+    public interface IMammal
     {
+    //    public byte Pelo { get; set; }
+    //    public string EyeColor { get; set; }
         void BreastFeed();
     }
 }

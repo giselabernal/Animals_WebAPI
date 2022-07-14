@@ -8,7 +8,7 @@ namespace AnimalsAppLibrary.Abstractions
 {
     public interface IBird
     {
-        void fly();
+        void Fly();
 
 
     }

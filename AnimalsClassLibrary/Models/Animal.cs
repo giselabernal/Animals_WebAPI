@@ -35,7 +35,7 @@ namespace AnimalsAppLibrary.Models
             throw new NotImplementedException();
         }
 
-        public abstract  void Makenoise();
+        public abstract  void MakeNoise();
 
 
         public abstract void Move();

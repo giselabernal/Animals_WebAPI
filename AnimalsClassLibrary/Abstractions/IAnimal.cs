@@ -9,7 +9,7 @@ namespace AnimalsAppLibrary.Abstractions
     public interface IAnimal
     {
         void Sleep();
-        void Makenoise();
+        void MakeNoise();
         void Move();
         void Eat();
         void Drink();

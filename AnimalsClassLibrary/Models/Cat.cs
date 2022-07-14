@@ -8,14 +8,16 @@ using System.Threading.Tasks;
 namespace AnimalsAppLibrary.Models
 {
     public class Cat : Animal,  IMammal
-
     {
+       // public byte Pelo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+       // public string EyeColor { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public void BreastFeed()
         {
             throw new NotImplementedException();
         }
 
-        public override void Makenoise()
+        public override void MakeNoise()
         {
             throw new NotImplementedException();
         }

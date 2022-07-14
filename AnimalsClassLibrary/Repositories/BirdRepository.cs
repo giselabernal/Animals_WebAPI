@@ -15,7 +15,6 @@ namespace AnimalsAppLibrary.Repositories
         public BirdRepository(AppDBContext context)
         {
             _context = context;
-
         }
 
         public Bird Add(Bird obj)
