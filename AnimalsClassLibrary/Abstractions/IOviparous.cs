@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnimalsAppLibrary.Abstractions
+namespace AnimalsClassLibrary.Abstractions
 {
-    internal interface IOviparous
+    public interface IOviparous
     {
         void bornfromEgg();
     }

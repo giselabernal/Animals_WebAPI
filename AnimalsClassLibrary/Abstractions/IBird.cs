@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnimalsAppLibrary.Abstractions
+namespace AnimalsClassLibrary.Abstractions
 {
     public interface IBird
     {
+      
         void Fly();
-
 
     }
 }

@@ -1,13 +1,12 @@
-﻿using AnimalsAppLibrary.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using AnimalsClassLibrary.Models;
 
-
-namespace AnimalsAppLibrary.Data
+namespace AnimalsClassLibrary.Data
 {
     public class AppDBContext : DbContext
     {
@@ -28,5 +27,6 @@ namespace AnimalsAppLibrary.Data
         public DbSet<Cat> Cats { get; set; }
         public DbSet<Dog> Dogs { get; set; }
         public DbSet<Bird> Birds { get; set; }
+        public DbSet<Log> Logs { get; set; }
     }
 }

@@ -1,13 +1,13 @@
-﻿using AnimalsAppLibrary.Abstractions;
-using AnimalsAppLibrary.Data;
-using AnimalsAppLibrary.Models;
+﻿using AnimalsClassLibrary.Abstractions;
+using AnimalsClassLibrary.Data;
+using AnimalsClassLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnimalsAppLibrary.Repositories
+namespace AnimalsClassLibrary.Repositories
 {
     public class DogRepository : IGenericRepository<Dog>
     {
@@ -44,16 +44,13 @@ namespace AnimalsAppLibrary.Repositories
                     _context.Dogs.Remove(dogs);
                     _context.SaveChanges();
                 }
-                else
-                {
-                    throw new Exception($"The dog with id: {id} does not exist");
-                }
+               
             }
             catch (Exception)
             {
-                throw;
+                throw new Exception($"Unable to fetch/delete data from database");
             }
-
+            //cambiar return dogs
         }
 
         public IEnumerable<Dog> GetAll()
@@ -73,14 +70,8 @@ namespace AnimalsAppLibrary.Repositories
             try
             {
                 var dog = _context.Dogs.FirstOrDefault(n => n.Id == id);
-                if (dog != null)
-                {
-                    return dog;
-                }
-                else
-                {
-                    throw new Exception($"The dog with id: {id} does not exist");
-                }
+                return dog;
+               
             }
             catch (Exception)
             {
@@ -89,6 +80,7 @@ namespace AnimalsAppLibrary.Repositories
             }
 
         }
+
 
         public Dog Update(int id, Dog obj)
         {
@@ -99,25 +91,24 @@ namespace AnimalsAppLibrary.Repositories
                 if (dog != null)
                 {
                     dog.Name = obj.Name;
-                    dog.breed_Type = obj.breed_Type;
+                    dog.Breed_Type = obj.Breed_Type;
                     dog.Gender = obj.Gender;
                     dog.AgeinYears = obj.AgeinYears;
                     dog.Weight = obj.Weight;
                     dog.Size = obj.Size;
                     dog.Color = obj.Color;
+                    dog.BreastFeed = obj.BreastFeed;
+                    dog.Fur = obj.Fur;
+                    dog.EyeColor = obj.EyeColor;
                     _context.SaveChanges();
                 }
-                else
-                {
-                    throw new Exception($"The cat with id: {id} does not exist");
-
-                }
+              
             }
-            catch (Exception)
+            catch(Exception)
             {
-                throw new Exception($"Unable to update record from database");
+                throw;
             }
-
+           
             return dog;
         }
     }

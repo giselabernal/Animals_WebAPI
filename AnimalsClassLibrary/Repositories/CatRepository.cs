@@ -1,13 +1,13 @@
-﻿using AnimalsAppLibrary.Abstractions;
-using AnimalsAppLibrary.Data;
-using AnimalsAppLibrary.Models;
+﻿using AnimalsClassLibrary.Abstractions;
+using AnimalsClassLibrary.Data;
+using AnimalsClassLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnimalsAppLibrary.Repositories
+namespace AnimalsClassLibrary.Repositories
 {
     public class CatRepository : IGenericRepository<Cat>
     {
@@ -99,12 +99,15 @@ namespace AnimalsAppLibrary.Repositories
                 if (cat != null)
                 {
                     cat.Name = obj.Name;
-                    cat.breed_Type = obj.breed_Type;
+                    cat.Breed_Type = obj.Breed_Type;
                     cat.Gender = obj.Gender;
                     cat.AgeinYears = obj.AgeinYears;
                     cat.Weight = obj.Weight;
                     cat.Size = obj.Size; 
                     cat.Color = obj.Color;
+                    cat.BreastFeed = obj.BreastFeed;
+                    cat.Fur = obj.Fur;
+                    cat.EyeColor = obj.EyeColor;
                     _context.SaveChanges();
                 }
                 else

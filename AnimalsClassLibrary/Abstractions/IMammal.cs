@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnimalsAppLibrary.Abstractions
+namespace AnimalsClassLibrary.Abstractions
 {
     public interface IMammal
     {
-    //    public byte Pelo { get; set; }
-    //    public string EyeColor { get; set; }
-        void BreastFeed();
+
+       
+        void FeedByBreast();
+
+
     }
 }

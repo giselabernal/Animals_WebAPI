@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace AnimalsClassLibrary.Abstractions
 {
-    public interface IAnimal
+    public interface ILogger
     {
-        void Sleep();
-        void EatSomething();
-        void DrinkSomething();
+        void WriteLog(string message);
 
-        void DoMovements();
-
-        void MakeNoises();
     }
 }

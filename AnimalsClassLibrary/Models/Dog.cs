@@ -1,28 +1,26 @@
-﻿using AnimalsAppLibrary.Abstractions;
+﻿using AnimalsClassLibrary.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnimalsAppLibrary.Models
+namespace AnimalsClassLibrary.Models
 {
-    public class Dog : Animal,  IMammal
+    public class Dog : Mammal,  IMammal
     {
-       // public byte Pelo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-       // public string EyeColor { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public void BreastFeed()
+        public void FeedByBreast()
         {
             throw new NotImplementedException();
         }
 
-        public override void MakeNoise()
+        public override void MakeNoises()
         {
             throw new NotImplementedException();
         }
 
-        public override void Move()
+        public override void DoMovements()
         {
             throw new NotImplementedException();
         }
